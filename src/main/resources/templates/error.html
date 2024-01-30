@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Изображения с полями для ввода</title>
+    <style>
+        body {
+            background-image: url('/image/woods.png');
+            background-size: cover;  /* Покрыть всю область просмотра */
+            background-repeat: no-repeat; /* Не повторять изображение */
+            background-attachment: fixed; /* Фиксированный фон при прокрутке */
+        }
+        .character-cell {
+            position: absolute;
+            bottom: 450px; /* Настройте положение текста по оси Y */
+            left: 720px; /* Настройте положение текста по оси X для левого персонажа */
+            font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif; /* Комиксовый шрифт */
+            color: #333; /* Цвет текста */
+            background-color: #f0e68c; /* Цвет фона */
+            border: 2px solid #333; /* Граница */
+            border-radius: 50px; /* Скругление углов */
+            padding: 10px; /* Отступ внутри элемента */
+            max-width: 400px; /* Максимальная ширина элемента */
+            max-height: 400px;
+            margin: 10px; /* Отступ снаружи элемента */
+            text-align: center; /* Выравнивание текста */
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.3); /* Тень */
+        }
+        .form-container {
+            position: absolute;
+            bottom: 350px; /* Настройте положение текста по оси Y */
+            left: 720px; /* Настройте положение текста по оси X для левого персонажа */
+            font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif; /* Комиксовый шрифт */
+            color: #333; /* Цвет текста */
+            background-color: #f0e68c; /* Цвет фона */
+            border: 2px solid #333; /* Граница */
+            border-radius: 50px; /* Скругление углов */
+            padding: 10px; /* Отступ внутри элемента */
+            max-width: 400px; /* Максимальная ширина элемента */
+            max-height: 400px;
+            margin: 10px; /* Отступ снаружи элемента */
+            text-align: center; /* Выравнивание текста */
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.3); /* Тень */
+        }
+    </style>
+</head>
+<body>
+<table width="100%">
+    <tr>
+        <!-- Персонаж слева внизу -->
+        <td class="character-cell">
+            <p  th:utext="${wolf}"></td></p>
+
+        </td>
+    </tr>
+</table>
+
+<div class="form-container  " >
+    <form action="/epizod2" method="get"  >
+        <button type="submit">Далее</button>
+    </form>
+</div>
+
+</body>
+</html>

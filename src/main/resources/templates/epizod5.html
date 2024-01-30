@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Изображения с полями для ввода</title>
+    <style>
+        body {
+            background-image: url('/image/grma.png');
+            background-size: cover;  /* Покрыть всю область просмотра */
+            background-repeat: no-repeat; /* Не повторять изображение */
+            background-attachment: fixed; /* Фиксированный фон при прокрутке */
+            background-position: center;
+        }
+        .character-cell {
+            position: absolute;
+            bottom: 450px; /* Настройте положение текста по оси Y */
+            left: 900px; /* Настройте положение текста по оси X для левого персонажа */
+            font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif; /* Комиксовый шрифт */
+            color: #333; /* Цвет текста */
+            background-color: #f0e68c; /* Цвет фона */
+            border: 2px solid #333; /* Граница */
+            border-radius: 50px; /* Скругление углов */
+            padding: 10px; /* Отступ внутри элемента */
+            max-width: 400px; /* Максимальная ширина элемента */
+            max-height: 400px;
+            margin: 10px; /* Отступ снаружи элемента */
+            text-align: center; /* Выравнивание текста */
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.3); /* Тень */
+        }
+        .form-container {
+            position: absolute;
+            bottom: 350px; /* Настройте положение текста по оси Y */
+            left: 900px; /* Настройте положение текста по оси X для левого персонажа */
+            font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif; /* Комиксовый шрифт */
+            color: #333; /* Цвет текста */
+            background-color: #f0e68c; /* Цвет фона */
+            border: 2px solid #333; /* Граница */
+            border-radius: 50px; /* Скругление углов */
+            padding: 10px; /* Отступ внутри элемента */
+            max-width: 400px; /* Максимальная ширина элемента */
+            max-height: 400px;
+            margin: 10px; /* Отступ снаружи элемента */
+            text-align: center; /* Выравнивание текста */
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.3); /* Тень */
+        }
+        .character-enot {
+            position: absolute;
+            bottom: 60px; /* Настройте положение текста по оси Y */
+            left: 1420px; /* Настройте положение текста по оси X для левого персонажа */
+        }
+        .character-rabbit {
+            position: absolute;
+            bottom: 50px; /* Настройте положение текста по оси Y */
+            left: 1120px; /* Настройте положение текста по оси X для левого персонажа */
+        }
+        .character-bird {
+            position: absolute;
+            bottom: 650px; /* Настройте положение текста по оси Y */
+            left: 820px; /* Настройте положение текста по оси X для левого персонажа */
+        }
+    </style>
+</head>
+<body>
+<table width="100%">
+    <tr>
+        <!-- Персонаж слева внизу -->
+        <td class="character-cell">
+            <p  th:utext="${grandma}"></td></p>
+
+        </td>
+        <td class="character-enot">
+            <img id="image" src="/image/enot.png"   alt="Enot">
+        </td>
+        <script>
+            document.getElementById('image').addEventListener('click', function() {
+                alert('ОНИ ЗВЕНЯТ');
+            });
+
+        </script>
+
+        <td class="character-rabbit">
+            <img id="imageRabbit" src="/image/rabbit.png"   alt="Rabbit">
+        </td>
+        <script>
+            document.getElementById('imageRabbit').addEventListener('click', function() {
+                alert('ОНИ КРУГЛЫЕ');
+            });
+
+        </script>
+        <td class="character-bird">
+            <img id="imageBird" src="/image/bird.png"   alt="Bird">
+        </td>
+        <script>
+            document.getElementById('imageBird').addEventListener('click', function() {
+                alert('ГДЕ ЕСТЬ ОРЕЛ И РЕШКА?');
+            });
+
+        </script>
+
+    </tr>
+</table>
+
+<div class="form-container  " >
+    <form action="/epizod6" method="get"  >
+        <input type="text" name="answer" placeholder="Введите текст">
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+
+</body>
+</html>
