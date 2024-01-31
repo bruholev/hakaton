@@ -11,25 +11,27 @@
         }
         .character-cell {
             position: absolute;
-            bottom: 700px; /* Настройте положение текста по оси Y */
-            left: 520px; /* Настройте положение текста по оси X для левого персонажа */
+            bottom: 350px; /* Настройте положение текста по оси Y */
+            left: 620px; /* Настройте положение текста по оси X для левого персонажа */
             font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif; /* Комиксовый шрифт */
+            font-size: x-large;
             color: #333; /* Цвет текста */
             background-color: #f0e68c; /* Цвет фона */
             border: 2px solid #333; /* Граница */
             border-radius: 50px; /* Скругление углов */
             padding: 10px; /* Отступ внутри элемента */
             max-width: 400px; /* Максимальная ширина элемента */
-            max-height: 400px;
+            max-height: 600px;
             margin: 10px; /* Отступ снаружи элемента */
             text-align: center; /* Выравнивание текста */
             box-shadow: 3px 3px 5px rgba(0,0,0,0.3); /* Тень */
         }
         .form-container {
             position: absolute;
-            bottom: 650px; /* Настройте положение текста по оси Y */
-            left: 520px; /* Настройте положение текста по оси X для левого персонажа */
+            bottom: 300px; /* Настройте положение текста по оси Y */
+            left: 620px; /* Настройте положение текста по оси X для левого персонажа */
             font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif; /* Комиксовый шрифт */
+
             color: #333; /* Цвет текста */
             background-color: #f0e68c; /* Цвет фона */
             border: 2px solid #333; /* Граница */
@@ -40,7 +42,25 @@
             margin: 10px; /* Отступ снаружи элемента */
             text-align: center; /* Выравнивание текста */
             box-shadow: 3px 3px 5px rgba(0,0,0,0.3); /* Тень */
+        }.character-enot {
+             position: absolute;
+             bottom: 300px; /* Настройте положение текста по оси Y */
+             left: 1000px; /* Настройте положение текста по оси X для левого персонажа */
+         }
+        .character-rabbit {
+            position: absolute;
+            bottom: 700px; /* Настройте положение текста по оси Y */
+            left: 1000px; /* Настройте положение текста по оси X для левого персонажа */
         }
+        .character-bird {
+            position: absolute;
+            bottom:500px; /* Настройте положение текста по оси Y */
+            left: 1000px; /* Настройте положение текста по оси X для левого персонажа */
+        }.character-redhat {
+             position: absolute;
+             bottom: 60px; /* Настройте положение текста по оси Y */
+             left: 200px; /* Настройте положение текста по оси X для левого персонажа */
+         }
     </style>
 </head>
 <body>
@@ -53,14 +73,48 @@
         </td>
 
 
+        <td class="character-redhat">
+            <img id="imageRedHat" src="/image/redhat.png"   alt="RedHat">
+        </td>
+
+        <td class="character-enot">
+            <img id="image" src="/image/enot.png"   alt="Enot">
+        </td>
+        <script>
+            document.getElementById('image').addEventListener('click', function() {
+                alert('Меня зовут Енот');
+            });
+
+        </script>
+
+        <td class="character-rabbit">
+            <img id="imageRabbit" src="/image/rabbit.png"   alt="Rabbit">
+        </td>
+        <script>
+            document.getElementById('imageRabbit').addEventListener('click', function() {
+                alert('Меня зовут кролик');
+            });
+
+        </script>
+        <td class="character-bird">
+            <img id="imageBird" src="/image/bird.png"   alt="Bird">
+        </td>
+        <script>
+            document.getElementById('imageBird').addEventListener('click', function() {
+                alert('Меня зовут попугай');
+            });
+
+        </script>
     </tr>
 </table>
 
 <div class="form-container " >
     <form action="/epizod2" method="get"  >
-        <button type="submit" >Далее</button>
+        <button type="submit"  >Далее</button>
     </form>
 </div>
+
+
 
 
 </body>

@@ -18,39 +18,32 @@ public class configProxyList {
 
         MessageService.cluesList =  new CopyOnWriteArrayList<>();
         List<String> clues= new ArrayList<>();
-        MessageService.cluesList.add(new TextMysteryGuess(111, "Жила была Красная шапочка   и однажды она пошла в FOREST(ЛЕС) к своей бабушке  и встретила серого Волка," +
+        /*MessageService.cluesList.add(new TextMysteryGuess(111, "Жила была Красная шапочка   и однажды она пошла в FOREST(ЛЕС) к своей бабушке  и встретила серого Волка," +
                 "Волк будет задавать Красной Шапочке загадки с ENGLISH(АНГЛИЙСКИМИ) словами , некоторые WORDS(СЛОВА) будут на английском LANGUAGE(ЯЗЫКЕ), отгадай их и SAVE(СПАСИ) Красную Шапочку", "",clues,true));
+        */MessageService.cluesList.add(new TextMysteryGuess(111, "Привет Я RED(КРАСНАЯ) шапочка!\n" +
+                "Моя MOTHER(МАМА) приготовила пирожки, сегодня нам нужно отнести их моей GRANDMOTHER(БАБУШКЕ)!\n" +
+                "Ты должен мне помочь!\n" +
+                "Она живёт в большом HOUSE(ДОМЕ) в лесу!\n" +
+                "\n" +
+                "Чтобы начать наше путешествие, отгадай эти загадки!"+
+                "Слева мои помощники Енот Кролик и Попугай нажми на них если хочешь подсказку", "",clues,true));
+
         clues.clear();
         clues.add("что то со стрелками");
         clues.add("висят на стене");
         clues.add("тик так тик так");
-            MessageService.cluesList.add(new TextMysteryGuess(221, "WHAT(ЧТО) всегда двигается но не сдвигается со своего PLACE(МЕСТА)", "часы",clues,true));
+            MessageService.cluesList.add(new TextMysteryGuess(221, "В объятьях её, тепло и ласка,\n" +
+                    "Варенье варит, заботится, как фея в сказке.\n" +
+                    "Будто SUN(СОЛНЦЕ) светит, в доме всегда май,\n" +
+                    "Кто эта WONDERFULL(ЧУДЕСНАЯ), в мире неповторимая?", "мама",clues,true));
         clues.clear();
 
         clues.add("они звенят");
         clues.add("они круглые ");
         clues.add("где есть орел и решка?");
-        MessageService.cluesList.add(new TextMysteryGuess(511, "Что означает THIS(ЭТИ) цифры 1,3,5,10?", "монета",clues,true));
+        MessageService.cluesList.add(new TextMysteryGuess(511, "Выбери HOUSE  на картинках", "1",clues,true));
         clues.clear();
 
-        clues.add("какие состояния воды бывают?");
-        clues.add("что с водой будет зимой?");
-        clues.add("что более мокрое вода или лед?");
-        MessageService.cluesList.add(new TextMysteryGuess(313, "На одном берегу стоит охотник на другом его собака как ей перейти к охотнику не замочив ног, и не пользуясь никаким транспортом?",
-                "по льду",clues,true));
-        clues.clear();
-
-        clues.add("куда записан Гарри Потер?");
-        clues.add("что такое учебник?");
-        clues.add("они лежат в библиотеке");
-        MessageService.cluesList.add(new TextMysteryGuess(414, "Оно не живое но дает рост Не дышит но оживляет Не говорит но может сообщать что это?",
-                "книга",clues,true));
-        clues.clear();
-
-        clues.add("что он делает со временем?");
-        clues.add("В какое время он может перенести?");
-        clues.add("Время с телевизором бежит не заметно?");
-        MessageService.cluesList.add(new TextMysteryGuess(115, "посмотри на телевизор через призму времени получится что?" , "поедатель времени,машина времени",clues,true));
 
 
         return MessageService.cluesList;

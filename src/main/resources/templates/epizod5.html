@@ -12,8 +12,8 @@
         }
         .character-cell {
             position: absolute;
-            bottom: 450px; /* Настройте положение текста по оси Y */
-            left: 900px; /* Настройте положение текста по оси X для левого персонажа */
+            bottom: 650px; /* Настройте положение текста по оси Y */
+            left: 750px; /* Настройте положение текста по оси X для левого персонажа */
             font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif; /* Комиксовый шрифт */
             color: #333; /* Цвет текста */
             background-color: #f0e68c; /* Цвет фона */
@@ -45,17 +45,32 @@
         .character-enot {
             position: absolute;
             bottom: 60px; /* Настройте положение текста по оси Y */
-            left: 1420px; /* Настройте положение текста по оси X для левого персонажа */
+            left: 1300px; /* Настройте положение текста по оси X для левого персонажа */
         }
         .character-rabbit {
             position: absolute;
-            bottom: 50px; /* Настройте положение текста по оси Y */
+            bottom:  50px; /* Настройте положение текста по оси Y */
             left: 1120px; /* Настройте положение текста по оси X для левого персонажа */
         }
         .character-bird {
             position: absolute;
-            bottom: 650px; /* Настройте положение текста по оси Y */
+            bottom: 350px; /* Настройте положение текста по оси Y */
             left: 820px; /* Настройте положение текста по оси X для левого персонажа */
+        }
+        .character-house {
+            position: absolute;
+            bottom: 650px; /* Настройте положение текста по оси Y */
+            left: 1400px; /* Настройте положение текста по оси X для левого персонажа */
+        }
+        .character-wolf {
+            position: absolute;
+            bottom:300px; /* Настройте положение текста по оси Y */
+            left: 1400px; /* Настройте положение текста по оси X для левого персонажа */
+        }
+        .character-redhat {
+            position: absolute;
+            bottom: 10px; /* Настройте положение текста по оси Y */
+            left: 1400px; /* Настройте положение текста по оси X для левого персонажа */
         }
     </style>
 </head>
@@ -72,7 +87,7 @@
         </td>
         <script>
             document.getElementById('image').addEventListener('click', function() {
-                alert('ОНИ ЗВЕНЯТ');
+                alert('В НЕМ ЕСТЬ ОКНА');
             });
 
         </script>
@@ -82,7 +97,7 @@
         </td>
         <script>
             document.getElementById('imageRabbit').addEventListener('click', function() {
-                alert('ОНИ КРУГЛЫЕ');
+                alert('ЕСТЬ КРЫША У НЕГО');
             });
 
         </script>
@@ -91,10 +106,19 @@
         </td>
         <script>
             document.getElementById('imageBird').addEventListener('click', function() {
-                alert('ГДЕ ЕСТЬ ОРЕЛ И РЕШКА?');
+                alert('ГДЕ ЖИВЕТ КРАСНАЯ ШАПОЧКА?');
             });
 
         </script>
+        <td class="character-house">
+            <img id="imageHouse" src="/image/house.png"   alt="Rabbit">
+        </td>
+        <td class="character-wolf">
+            <img id="imageWolf" src="/image/wolf.png"   alt="Rabbit">
+        </td>
+        <td class="character-redhat">
+            <img id="imageRedHat" src="/image/redhatnum.png"   alt="Rabbit">
+        </td>
 
     </tr>
 </table>

@@ -33,8 +33,8 @@ public class ControllerImg {
     public String epizod3(@RequestParam(value = "answer",required = false) String answer,Model model){
 
         TextMysteryGuess result= MessageService.cluesList.stream().filter(e-> e.getStageUserOrderMystery()==221).findFirst().orElse(new TextMysteryGuess());
-        String  response =answer.equals( result.getGuess())?"epizod3":"error";
-        model.addAttribute("wolf",answer.equals( result.getGuess())?"Правильно это часы!":"Неправильный ответ!");
+        String  response =answer.toLowerCase().equals( result.getGuess())?"epizod3":"error";
+        model.addAttribute("wolf",answer.toLowerCase().equals( result.getGuess())?"Правильно это МАМА!":"Неправильный ответ!");
         return response;    }
     @GetMapping("/epizod4")
     public String epizod4(Model model){
@@ -51,8 +51,8 @@ public class ControllerImg {
     public String epizod6(@RequestParam(value = "answer",required = false) String answer,Model model){
 
         TextMysteryGuess result= MessageService.cluesList.stream().filter(e-> e.getStageUserOrderMystery()==511).findFirst().orElse(new TextMysteryGuess());
-        String  response =answer.equals( result.getGuess())?"epizod6":"errorgrma";
-        model.addAttribute("grandma",answer.equals( result.getGuess())?"Правильно это монеты!":"Неправильный ответ!");
+        String  response =answer.toLowerCase().equals( result.getGuess())?"epizod6":"errorgrma";
+        model.addAttribute("grandma",answer.toLowerCase().equals( result.getGuess())?"Правильно!":"Неправильный ответ!");
         return response;    }
 
     @GetMapping("/epizod7")
